@@ -1,13 +1,11 @@
 import java.util.Scanner;
 
- public class A_Bear_and_Big_Brother {
+class AStonesOnTheTable {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-
-
+        int n = sc.nextInt();
         
-       
+      
         sc.close();
     }
 }
