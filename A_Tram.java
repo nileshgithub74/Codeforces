@@ -1,26 +1,26 @@
 
 import java.util.Scanner;
 
-public class A_George_and_Accommodation {
+public class A_Tram {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int t = sc.nextInt();
-        int count = 0;
+        int total = 0;
+        int maxSum = 0;
         while (t-- > 0) {
-
             int x = sc.nextInt();
             int y = sc.nextInt();
 
-            if (y-x >=2) {
-                count++;
-            }
+            total += y - x;
+            maxSum = Math.max(total, maxSum);
 
         }
 
-        System.out.println(count);
+        System.out.println(maxSum);
 
-        sc.close();
+
+
+        sc.close(); 
     }
 }
