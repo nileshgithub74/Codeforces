@@ -15,7 +15,7 @@ public class A_Nearly_Lucky_Number {
         for(char ch : str.toCharArray()){
             int digit = ch-'0';
 
-            if(digit != 4  digit != 7){
+            if(digit != 4  &&   digit != 7){
                isfound = false;
                break;
             }
