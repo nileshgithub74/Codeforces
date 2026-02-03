@@ -9,20 +9,20 @@ public class A_Nearly_Lucky_Number {
         long n = sc.nextLong();
 
         String str = String.valueOf(n);
+
+
+        int count =0;
+         for(char c : str.toCharArray()){
+            if(c == '4' || c == '7'){
+                count++;
+            }
+         }
         
 
-        boolean isfound = true;
-        for(char ch : str.toCharArray()){
-            int digit = ch-'0';
-
-            if(digit != 4  &&   digit != 7){
-               isfound = false;
-               break;
-            }
-        }
+      
          
 
-        if(isfound){
+        if( count == 4 || count == 7){
             System.out.println("YES");
         }
         else{
